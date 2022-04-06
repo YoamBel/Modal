@@ -542,6 +542,7 @@ html {
       color: #fff;
       -webkit-text-stroke: 1px #264653;
       line-height: 100%;
+      margin-left: 3px;
   }
   .heading-3 {
       font-size: calc(28 * var(--res));
