@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+/*font-family: 'Fleur De Leah', cursive;*/
+
+  html {
+      --res: calc(0.01*10vmin)
+  }
+  a {
+      text-decoration: none;
+      cursor: pointer;
+      color: #264653;
+  }
+ 
+
+/*#region section--body logo */
+  .section--body {
+      flex-direction: column;
+      font-family: adobe-clean, Source Sans Pro, Helvetica, Arial, sans-serif;
+     
+  }
+  .section--body .logo-- {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section--body .logo-- .logo--header-- {
+    /*width: calc(350 * var(--res));
+    height: calc(250 * var(--res));
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-right: 5px;*/
+    
+    width: calc(220 * var(--res));
+    height: calc(220 * var(--res));
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-right: 5px;
+   
+  }
+  .logo-- img {
+      max-width: 100%;
+      height: auto;
+  }
+  .link--logo--donate--{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: 'Fleur De Leah', cursive;
+    float: right;
+    transition: 0.2s;
+    
+  }
+  .link--logo--donate--:hover{
+    text-decoration: none;  
+    background: #2646531f;
+  }
+
+  .link--logo--donate-- .heading-4{
+    font-size: 30px;
+    margin-right: 20px;
+  }
+  .logo--donate--{
+    width: calc(110 * var(--res));
+    height: calc(110 * var(--res));
+    float: right;
+  }
+  
+
+  @media only screen and (max-width: 992px){
+    .link--logo--donate-- .heading-4{
+      font-size: calc(30 * var(--res));
+      margin-right: calc(20 * var(--res));
+      
+    }
+  }
+  @media only screen and (max-width: 540px){
+    .link--logo--donate-- .heading-4{
+      font-size: calc(40 * var(--res));    
+    }
+    .logo--donate--{
+      width: calc(120 * var(--res));
+      height: calc(120 * var(--res));
+      float: right;
+    }
+  }
+  /*#endregion*/
+
+/*#region section--body text*/
+    .section--body .text-- {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        
+    } 
+    .text-- p {
+      font-size: large;
+    }
+
+    .links-- {
+      width: 70%;
+      margin: 20px 15%;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 2px solid #c79487;
+      
+    }
+   .links-- .webpage--,
+   .links-- .lastUpDate--{
+       display: flex;
+       justify-content: center;
+    }
+  .links-- .webpage-- svg,
+  .links-- .lastUpDate-- svg{
+       margin-right : 10px;   
+       margin-top : 3px;  
+   }
+   .heading-9-- { 
+     font-size: 15px;
+   }
+   .heading-9-- a:hover {
+     color: rgb(101, 67, 252);
+
+   }
+
+   @media only screen and (max-width: 992px){
+
+    .links-- {
+     margin: 20px 15%;
+    }
+   }
+
+   @media only screen and (max-width: 540px){
+    .links-- {
+      flex-direction: column;
+    }
+    
+    .heading-9-- { 
+      font-size: calc(35 * var(--res));
+    }
+    .webpage-- svg,
+    .lastUpDate-- svg{
+      width: calc(30 * var(--res));
+      height: calc(30 * var(--res));
+    }
+
+    .section--body .text-- {
+      font-size: calc(40 * var(--res));
+    } 
+  }
+  
+  
+   
+ 
+/*#endregion*/
+
+/*#region gallery*/
+ .gallery-- {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gallery-- .video-- {
+    position: relative;
+    width: 100%;
+    padding-bottom: 35%;
+    height: 0;
+    -webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.8); 
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.8);
+    border-radius: 15px;
+  }
+  .video_yt-- {
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    padding: initial;
+   
+  }
+
+  @media only screen and (max-width: 992px){
+    .gallery-- .video-- { 
+      padding-bottom: 65%;  
+    }
+  }
+  /*#endregion*/
+
+/*#region Arrow*/
+.carousel--arrow--left,
+.carousel--arrow--right{
+  margin: 35% 0;
+  height: 12.5%;
+  transition: 0.3s;
+}
+
+
+.carousel--arrow--left:hover,
+.carousel--arrow--right:hover{
+    background: #2646531f;
+}
+@media only screen and (max-width: 1200px){
+  .carousel--arrow--left,
+  .carousel--arrow--right{
+    margin: 40% 0;
+    height: 12.5%;
+
+     
+  }
+
+@media only screen and (max-width: 992px){
+  .carousel--arrow--left,
+  .carousel--arrow--right{
+   display:none;   
+  }
+ }
+    
+/*#endregion*/
+}
