@@ -9,6 +9,13 @@
       cursor: pointer;
       color: #264653;
   }
+
+  .link--site-- {
+    color: rgb(89, 81, 248);
+    font-size: 18px;
+    text-decoration: none;
+
+  }
  
 
 /*#region section--body logo */
@@ -131,6 +138,9 @@
      
     }
   }
+
+
+  
   /*#endregion*/
 
 /*#region section--body text*/
@@ -275,8 +285,8 @@
 .carousel--arrow--right{
  height: 100%;
 
-  /*a retirer pour la carousel
-  display:none;*/
+  /*a retirer pour la carousel*/
+  display:none;
 }
 
 
