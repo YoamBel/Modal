@@ -522,7 +522,7 @@ html {
   }
  
   .heading-1 {
-      font-size: calc(60 * var(--res));
+      font-size: calc(45 * var(--res));
       font-family: adobe-clean, Source Sans Pro, Helvetica, Arial, sans-serif;
       font-weight: 900;
       font-style: normal;
@@ -535,7 +535,7 @@ html {
   }
   
   .heading-2 {
-      font-size: calc(35 * var(--res));
+      font-size: calc(28 * var(--res));
       font-family: adobe-clean, Source Sans Pro, Helvetica, Arial, sans-serif;
       font-weight: 700;
       font-style: normal;
@@ -545,7 +545,7 @@ html {
       margin-left: 3px;
   }
   .heading-3 {
-      font-size: calc(28 * var(--res));
+      font-size: calc(25 * var(--res));
       font-family: adobe-clean, Source Sans Pro, Helvetica, Arial, sans-serif;
       font-weight: 600;
       font-style: italic;
@@ -562,7 +562,7 @@ html {
       line-height: 130%;
   }
   .heading-5 {
-      font-size: calc(30 * var(--res));
+      font-size: calc(23 * var(--res));
       font-family: adobe-clean, Source Sans Pro, Helvetica, Arial, sans-serif;
       font-weight: 400;
       font-style: normal;
@@ -570,7 +570,7 @@ html {
       line-height: 130%;
   }
   .heading-6 {
-      font-size: calc(25 * var(--res));
+      font-size: calc(21 * var(--res));
       font-family: adobe-clean, Source Sans Pro, Helvetica, Arial, sans-serif;
       font-weight: 400;
       font-style: normal;
@@ -698,7 +698,7 @@ html {
     }
     .hiring_icon{
         display: flex;
-        justify-content: flex-start;
+        justify-content:center;
         align-items: center;
         padding:0;
         margin: 0;
@@ -707,11 +707,24 @@ html {
         text-align: left;
     } 
     header .logoName_container .logo .logoModal{
-      width: calc(200 * var(--res));
-      height: calc(200 * var(--res));
+      width: calc(140 * var(--res));
+      height: calc(140 * var(--res));
       border-radius: 50%;
       border: 3px solid black;
       margin-right: 5px;
+    }
+    @media only screen and (max-width: 1200px){
+      .heading-1 {
+        font-size: calc(44 * var(--res));
+      }
+      .heading-2 {
+        font-size: calc(26.5 * var(--res));
+      }
+      header .logoName_container .logo img{
+        width: calc(240 * var(--res));
+        height: calc(240 * var(--res));          
+    }
+      
     }
     @media only screen and (max-width: 992px){
         .logo_link{
@@ -772,7 +785,7 @@ html {
       display: flex;
       flex-direction: column;
        justify-content: flex-start;
-       align-items: center;
+       text-align: initial;
        padding: 0;
        margin:20px 10px;  
   } 
