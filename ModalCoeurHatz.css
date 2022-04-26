@@ -301,10 +301,9 @@
 
 .carousel--arrow--left,
 .carousel--arrow--right{
- height: 100%;
+ height: 5%;
+ top:50%;
 
-  /*a retirer pour la carousel*/
- 
 }
 
 
@@ -317,5 +316,14 @@
     display: flex;
     flex-direction: column;
   }
+}
+
+@media only screen and (max-width: 540px){
+  .carousel--arrow--left svg ,
+.carousel--arrow--right svg
+{
+  width: calc(35 * var(--res));
+  height: calc(35 * var(--res));
+}
 }
 /*#endregion*/
